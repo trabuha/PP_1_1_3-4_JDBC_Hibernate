@@ -62,7 +62,7 @@ public class User {
     }
 
 
-    @Override
+    /*@Override
     public String toString() {
         return "User{" +
                 "id=" + id +
@@ -70,6 +70,6 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 '}';
-    }
+    }*/
 
 }

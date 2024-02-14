@@ -47,7 +47,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
             preparedStatement.executeUpdate();
 
-            System.out.println("Таблица пользователец успешно удалена");
+            System.out.println("Таблица пользователей успешно удалена");
 
 
         }
@@ -101,6 +101,7 @@ public class UserDaoJDBCImpl implements UserDao {
             //List<User> userList = new ArrayList<>();
 
             while (resultSet.next()) {
+
 
                 String name = resultSet.getString("name");
                 String lastName = resultSet.getString("lastName");
