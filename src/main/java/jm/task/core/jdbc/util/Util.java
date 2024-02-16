@@ -8,14 +8,14 @@ public class Util {
     // реализуйте настройку соеденения с БД
 
     //private static final String connection = null;
-    private static String URL = "jdbc:mysql://localhost:3306/mydbtest";
-    private static final String USERNAME = "trab";
+    private static final String URL = "jdbc:mysql://localhost:3306/mydbtest";
+    private static final String USER_NAME = "trab";
     private static final String PASSWORD = "trab";
 
 
     public static Connection getConnection() {
         try {
-            return DriverManager.getConnection(URL, USERNAME, PASSWORD);
+            return DriverManager.getConnection(URL, USER_NAME, PASSWORD);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
